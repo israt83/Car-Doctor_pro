@@ -16,11 +16,23 @@ const page = () => {
           </div>
   
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
-            <h2 className='text-center text-4xl font-bold'>Login</h2>
+            <h2 className='text-center text-4xl font-bold'>Sign Up</h2>
             <form onSubmit={handleSignin} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text font-bold text-black mb-2">Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="name" 
+                  placeholder="Your Name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text font-bold text-black mb-2">Email</span>
                 </label>
                 <input
                   type="email"
@@ -32,7 +44,7 @@ const page = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text font-bold text-black mb-2">Password</span>
                 </label>
                 <input
                   type="password"
