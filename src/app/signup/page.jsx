@@ -5,8 +5,14 @@ import React from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa6';
 
 const page = () => {
-    const handleSignin = async () =>{
-
+    const handleSignUp = async (event) =>{
+      event.preventDefault();
+      const newUser = {
+        name:event.target.name.value,
+        naemailme:event.target.email.value,
+        password:event.target.password.value,
+      };
+      console.log(newUser)
     }
     return (
         <div className="hero min-h-screen">
@@ -17,7 +23,7 @@ const page = () => {
   
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
             <h2 className='text-center text-4xl font-bold'>Sign Up</h2>
-            <form onSubmit={handleSignin} className="card-body">
+            <form onSubmit={handleSignUp} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text font-bold text-black mb-2">Name</span>
