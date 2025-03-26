@@ -16,3 +16,4 @@ export const POST = async (request)=>{
         return Response.json({message : "Something is rong"} ,{status : 500})
     }
 }
+

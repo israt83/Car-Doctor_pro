@@ -9,11 +9,13 @@ const page = () => {
       event.preventDefault();
       const newUser = {
         name:event.target.name.value,
-        naemailme:event.target.email.value,
+        email:event.target.email.value,
         password:event.target.password.value,
       };
       console.log(newUser)
     }
+
+    
     return (
         <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row">
